@@ -72,7 +72,7 @@
 
   <section class="about">
     <div class="container about__container">
-      <h2 class="tittle">about us</h2>
+      <h2 class="title">about us</h2>
       <p class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem!</p>
       <div class="row">
         <div class="col-xl-6 col-lg-6">
@@ -378,7 +378,7 @@
 
       <div class="row blog__row">
         <div class="col-xl-5 col-lg-5">
-          <img src="images/blog_image1.png" class="w-100%" alt="">
+          <img src="images/blog_image1.png" style="width: 100%;" alt="">
         </div>
 
         <div class="col-xl-7 col-lg-7">
@@ -404,7 +404,7 @@
       <div class="blog__line"></div>
       <div class="row blog__row">
         <div class="col-xl-5 col-lg-5">
-          <img src="images/blog_image2.png" class="w-100%" alt="">
+          <img src="images/blog_image2.png" style="width:100%" alt="">
         </div>
 
         <div class="col-xl-7 col-lg-7">
@@ -474,34 +474,36 @@
       <h2 class="title">get in touch</h2>
       <p class="subtitle">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit, labore.</p>
       <div class="row justify-content-between">
-        <div class="col-xl-3 col-lg-3 col-md-12 contact-div__address">
-          <div class="contact-address col-md-4">
-            <i class="fa fa-map-marker"></i>
-            <div class="contact-address__text">
-              <h6 class="contact-address__title">address</h6>
-              <p class="contact-address__location">312, 7th Ave, New York</p>
-              <p class="contact-address__location">NY 101200, United States of America</p>
+        <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12 contact-div__address">
+          <div class="row">
+            <div class="contact-address col-md-4 col-sm-3 col-12">
+              <i class="fa fa-map-marker"></i>
+              <div class="contact-address__text">
+                <h6 class="contact-address__title">address</h6>
+                <p class="contact-address__location">312, 7th Ave, New York</p>
+                <p class="contact-address__location">NY 101200, United States of America</p>
+              </div>
             </div>
-          </div>
-          <div class="contact-address col-md-4">
-            <i class="fa fa-mobile"></i>
-            <div class="contact-address__text">
-              <h6 class="contact-address__title">address</h6>
-              <a href="" class="contact-address__phone">+65 0052 300,</a>
-              <a href="" class="contact-address__phone">+65 8821 210,</a>
-              <div><a href="" class="contact-address__phone">+88 01723 551 340,</a></div>
+            <div class="contact-address col-md-4 col-sm-3 col-12">
+              <i class="fa fa-mobile"></i>
+              <div class="contact-address__text">
+                <h6 class="contact-address__title">address</h6>
+                <a href="" class="contact-address__phone">+65 0052 300,</a>
+                <a href="" class="contact-address__phone">+65 8821 210,</a>
+                <div><a href="" class="contact-address__phone">+88 01723 551 340,</a></div>
+              </div>
             </div>
-          </div>
-          <div class="contact-address col-md-4">
-            <i class="fa fa-envelope-o "></i>
-            <div class="contact-address__text">
-              <h6 class="contact-address__title">address</h6>
-              <a href="" class="contact-address__mail">shapedtheme@gmail.com</a>
-              <a href="" class="contact-address__mail">khalilkode@gmail.com</a>
+            <div class="contact-address col-md-4 col-sm-3 col-12">
+              <i class="fa fa-envelope-o "></i>
+              <div class="contact-address__text">
+                <h6 class="contact-address__title">address</h6>
+                <a href="" class="contact-address__mail">shapedtheme@gmail.com</a>
+                <a href="" class="contact-address__mail">khalilkode@gmail.com</a>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-xl-8 col-lg-8 ">
+        <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
           <form action="" class="contact-form">
             <input type="text" class="contact-form__input" placeholder="your name">
             <input type="text" class="contact-form__input" placeholder="your e-mail">
@@ -578,8 +580,7 @@
       slidesToScroll: 1,
       arrows: false,
       dots: false,
-      responsive: [
-        {
+      responsive: [{
           breakpoint: 767.98,
           settings: {
             slidesToShow: 3,
